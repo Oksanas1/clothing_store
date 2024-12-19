@@ -1,0 +1,16 @@
+// UTILS
+@import 'utils/_fonts.scss';
+@import 'utils/_varibles.scss';
+@import 'utils/_mixins.scss';
+@import 'utils/_icon.scss';
+
+// GENERAL
+@import 'general/_reset.scss';
+@import 'general/_main.scss';
+
+// COMPONENTS
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+
+// PAGES
+@import 'pages/_home.scss';

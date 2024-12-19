@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "icons";
+    src: url("fonts/icon-font/icons.ttf?02eb24ee0a024c8e7b108fc850c53380") format("truetype"),
+url("fonts/icon-font/icons.woff?02eb24ee0a024c8e7b108fc850c53380") format("woff"),
+url("fonts/icon-font/icons.woff2?02eb24ee0a024c8e7b108fc850c53380") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-secure:before {
+    content: "\f101";
+}
+.icon-search:before {
+    content: "\f102";
+}
+.icon-plus:before {
+    content: "\f103";
+}
+.icon-heart-solid:before {
+    content: "\f104";
+}
+.icon-heart-regular:before {
+    content: "\f105";
+}
+.icon-close:before {
+    content: "\f106";
+}
+.icon-burger:before {
+    content: "\f107";
+}
+.icon-bag:before {
+    content: "\f108";
+}
+.icon-arrow:before {
+    content: "\f109";
+}

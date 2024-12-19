@@ -1,0 +1,73 @@
+$icons-fontvar: 'icons';
+
+@font-face {
+  font-family: $icons-fontvar;
+  src:
+    url('fonts/icon-font/icons.ttf?02eb24ee0a024c8e7b108fc850c53380') format('truetype'),
+    url('fonts/icon-font/icons.woff?02eb24ee0a024c8e7b108fc850c53380') format('woff'),
+    url('fonts/icon-font/icons.woff2?02eb24ee0a024c8e7b108fc850c53380') format('woff2');
+}
+
+[class^='icon-'],
+[class*=' icon-'],
+.icon-font {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+  'secure': '\f101',
+  'search': '\f102',
+  'plus': '\f103',
+  'heart-solid': '\f104',
+  'heart-regular': '\f105',
+  'close': '\f106',
+  'burger': '\f107',
+  'bag': '\f108',
+  'arrow': '\f109',
+);
+
+.icon-secure:before {
+  content: map-get($icons-map, 'secure');
+}
+.icon-search:before {
+  content: map-get($icons-map, 'search');
+}
+.icon-plus:before {
+  content: map-get($icons-map, 'plus');
+}
+.icon-heart-solid:before {
+  content: map-get($icons-map, 'heart-solid');
+}
+.icon-heart-regular:before {
+  content: map-get($icons-map, 'heart-regular');
+}
+.icon-close:before {
+  content: map-get($icons-map, 'close');
+}
+.icon-burger:before {
+  content: map-get($icons-map, 'burger');
+}
+.icon-bag:before {
+  content: map-get($icons-map, 'bag');
+}
+.icon-arrow:before {
+  content: map-get($icons-map, 'arrow');
+}
+
+@mixin icons($filename, $insert: before) {
+  &::#{$insert} {
+    content: map-get($icons-map, $filename);
+    font-family: icons !important;
+    font-weight: normal !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
