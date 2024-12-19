@@ -1,6 +1,6 @@
 # Project: Clothing store
 
-### [Site link]([https://oksanas1.github.io/clothing-store/](https://oksanas1.github.io/clothing_store/))
+### [Site link](https://oksanas1.github.io/clothing_store/)
 
 Layout page supports mobile (up-to-320px) and desktop (up-to-1400px) versions.
 
